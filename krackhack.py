@@ -17,7 +17,7 @@ import numpy as np
 names=["NTPC","ONGC","POWERGRID","RELIANCE","SBIN","SHREECEM","SUNPHARMA","TATAMOTORS","TATASTEEL","TCS","TECHM","TITAN","ULTRACEMCO","UPL","VEDL","WIPRO","ZEEL","BHARTIARTL","BPCL","BRITANNIA","CIPLA","COALINDIA","DRREDDY","EICHERMOT","GAIL","GRASIM","HCLTECH","HDFC","HDFCBANK","HEROMOTOCO","HINDALCO","HINDUNILVR","ICICIBANK","INDUSINDBK","INFRATEL","INFY","IOC","ITC","JSWSTEEL","KOTAKBANK","LT","MARUTI","MM","NESTLEIND","ADANIPORTS","ASIANPAINT","AXISBANK","BAJAJ-AUTO","BAJAJFINSV","BAJFINANCE"]
 datasets=[]
 for n in names:
-    df=pd.read_csv(n+".csv")
+    df=pd.read_csv("Dataset/"+n+".csv")
     datasets.append(df)
 
 with warnings.catch_warnings():
